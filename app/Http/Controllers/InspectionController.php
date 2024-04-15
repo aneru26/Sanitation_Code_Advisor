@@ -64,9 +64,14 @@ class InspectionController extends Controller
     // Save the purchase record
     $inspection->save();
 
-    // You may also want to update the car status or perform other actions related to the purchase
-
+ // Check the percentage and redirect accordingly
+ if ($inspection->percentage > 64) {
+    // Redirect to admin/inspection/list
     return redirect('admin/inspection/list')->with('success', "Inspection Submitted");
+} else {
+    // Redirect to admin/inspection/compliance
+    return redirect('admin/inspection/compliance')->with('success', "Inspection Submitted");
+}
 }
 
 public function edit($id)
@@ -116,9 +121,14 @@ if (!$inspection) {
     // Save the purchase record
     $inspection->save();
 
-    // You may also want to update the car status or perform other actions related to the purchase
-
-    return redirect('admin/inspection/list')->with('success', "Inspection Successfully Edited");
+     // Check the percentage and redirect accordingly
+ if ($inspection->percentage > 64) {
+    // Redirect to admin/inspection/list
+    return redirect('admin/inspection/list')->with('success', "Inspection Submitted");
+} else {
+    // Redirect to admin/inspection/compliance
+    return redirect('admin/inspection/compliance')->with('success', "Inspection Submitted");
+}
 }
 
     
@@ -329,9 +339,14 @@ $inspection->percentage = 100 - $totalDemeritScore;
 // Save the purchase record
 $inspection->save();
 
-// You may also want to update the car status or perform other actions related to the purchase
-
-return redirect('inspector/inspection/list')->with('success', "Inspection Submitted");
+ // Check the percentage and redirect accordingly
+ if ($inspection->percentage > 64) {
+    // Redirect to admin/inspection/list
+    return redirect('inspector/inspection/list')->with('success', "Inspection Submitted");
+} else {
+    // Redirect to admin/inspection/compliance
+    return redirect('inspector/inspection/compliance')->with('success', "Inspection Submitted");
+}
 }
 
 public function inspectoredit($id)
@@ -382,9 +397,14 @@ if (!$inspection) {
     // Save the purchase record
     $inspection->save();
 
-    // You may also want to update the car status or perform other actions related to the purchase
-
-    return redirect('inspector/inspection/list')->with('success', "Inspection Successfully Edited");
+   // Check the percentage and redirect accordingly
+ if ($inspection->percentage > 64) {
+    // Redirect to admin/inspection/list
+    return redirect('inspector/inspection/list')->with('success', "Inspection Submitted");
+} else {
+    // Redirect to admin/inspection/compliance
+    return redirect('inspector/inspection/compliance')->with('success', "Inspection Submitted");
+}
 }
 
 public function inspectorresult($id)

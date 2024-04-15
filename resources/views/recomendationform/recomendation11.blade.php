@@ -19,6 +19,41 @@
 
   
    
+    <section class="content mt-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="dropdown float-right">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Section Code
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="/recommendationform/1" >Sanitary Permit</a>
+                <a class="dropdown-item" href="/recommendationform/2" >Health Certificate</a>
+                <a class="dropdown-item" href="/recommendationform/3" >Storage Protection of flour & ingredients</a>
+                <a class="dropdown-item" href="/recommendationform/4" >Construction of Premises</a>
+                <a class="dropdown-item" href="/recommendationform/5" >Maintenance of Premise</a>
+                <a class="dropdown-item" href="/recommendationform/6" >Toilet Provision</a>
+                <a class="dropdown-item" href="/recommendationform/7" >Hand washing facilities</a>
+                <a class="dropdown-item" href="/recommendationform/8" >Water Supply</a>
+                <a class="dropdown-item" href="/recommendationform/9" >Liquid Waste Management</a>
+                <a class="dropdown-item" href="/recommendationform/10" >Wholesomeness of Food</a>
+                <a class="dropdown-item" href="/recommendationform/11" >Protection of Food</a>
+                <a class="dropdown-item" href="/recommendationform/12" >Vermin Control</a>
+                <a class="dropdown-item" href="/recommendationform/13" > Cleanliness and Tidiness</a>
+                <a class="dropdown-item" href="/recommendationform/14" >Personal Cleanliness</a>
+                <a class="dropdown-item" href="/recommendationform/15" >Housekeeping and Management</a>
+                <a class="dropdown-item" href="/recommendationform/16" >Conditions of Appliance & Utensils</a>
+                <a class="dropdown-item" href="/recommendationform/17" >Cleanliness of Appliance & Utensils</a>
+                <a class="dropdown-item" href="/recommendationform/18" >Disease Control</a>
+                <a class="dropdown-item" href="/recommendationform/19" >Disposal of Garbage</a>
+                <a class="dropdown-item" href="/recommendationform/20" >Miscellaneous Training (FHC)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Main content -->
     <section class="content mt-4">

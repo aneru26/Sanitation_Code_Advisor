@@ -25,7 +25,7 @@ class PDFController extends Controller
         ];
     
         $pdf = PDF::loadView('pdf.inspectionResultPdf', $data);
-        return $pdf->download('inspection-result.pdf');
+        return $pdf->download( $getRecord->register->name_of_establishment . '-inspection-result.pdf');
     }
     private function totaldemerit($inspection)
 

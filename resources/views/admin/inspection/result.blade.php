@@ -81,7 +81,7 @@
             </div>
             <div class="col-sm-6 pt-4"> 
           
-              <h5 class="text-center fw-bold text-right"> DATE: <span class="text-decoration-underline">{{ $getRecord->created_at }}</span> </h5>
+              <h5 class="text-center fw-bold text-right"> DATE: <span class="text-decoration-underline">{{ $getRecord->created_at->format('M d, Y') }}</span> </h5>
             
           
             </div>
