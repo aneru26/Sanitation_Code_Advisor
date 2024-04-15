@@ -55,9 +55,9 @@
                         <td>{{ $value->occupancy_classification }}</></td>
                         <td>{{ $value->occupancy_classification }}</></td>
                         <td><a
-                          href="{{ url('admin/inspection/result/'.$value->id) }}">Display</a></></td>
+                          href="{{ url('inspector/inspection/result/'.$value->id) }}">Display</a></></td>
                           <td><a
-                            href="{{ url('admin/inspection/edit/'.$value->id) }}">Edit</a></></td>
+                            href="{{ url('inspector/inspection/edit/'.$value->id) }}">Edit</a></></td>
                       </tr>
                     @endforeach
             

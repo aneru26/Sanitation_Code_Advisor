@@ -12,7 +12,7 @@
         <div class="row mb-2">
           <div class="col-sm-12">
             <button type="button" class="btn btn-light" onclick="window.history.back()">Back</button> <!-- Back button -->
-            <h1 class="text-center fw-bold">Inspector Compliance(Total : {{ $getRecord->total() }})</h1>
+            <h1 class="text-center fw-bold">Inspection Compliance(Total : {{ $getRecord->total() }})</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->

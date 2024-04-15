@@ -61,7 +61,7 @@
             <div class="card-body p-3 text-center">
               <a href="{{ url('customer/certificate/list')}}">
                 <i class="icon ion-ribbon-b" style="font-size: 30px;"></i>
-                <p class="card-text">Certificates</p>
+                <p class="card-text">Attachments</p>
               </a>
             </div>
           </div>

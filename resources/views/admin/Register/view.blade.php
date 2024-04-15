@@ -106,7 +106,7 @@
                   <div class="col-12 pt-5">
                     <div class="row justify-content-end">
                     </div>
-                    <h2 class="text-left fw-bold text-center">CERTIFICATES</h2>
+                    <h2 class="text-left fw-bold text-center">ATTACHMENTS</h2>
                     
                   </div>
 
@@ -128,7 +128,7 @@
                                 @endforeach
                             @else
                                 <div class="col-12 text-center">
-                                    <p>No Certificate found.</p>
+                                    <p>No Attachments found.</p>
                                 </div>
                             @endif
                         </div>

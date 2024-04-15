@@ -31,7 +31,7 @@ class Inspection extends Model
         ->join('registers', 'registers.id', '=', 'inspections.register_id')
         ->join('users', 'users.id', '=', 'inspections.user_id')
         ->where('inspections.is_delete', '=', 0)
-        ->where('inspections.percentage', '>', 50) // Add this condition
+        ->where('inspections.percentage', '>', 65) // Add this condition
         ->where('registers.created_by', '=', $userId) // Filter inspections by the authenticated user's ID
         ->orderBy('inspections.id', 'desc')
         ->paginate();
@@ -48,7 +48,7 @@ static public function getRecordcustomerCompliance()
         ->join('registers', 'registers.id', '=', 'inspections.register_id')
         ->join('users', 'users.id', '=', 'inspections.user_id')
         ->where('inspections.is_delete', '=', 0)
-        ->where('inspections.percentage', '<', 49) // Add this condition
+        ->where('inspections.percentage', '<', 64) // Add this condition
         ->where('registers.created_by', '=', $userId) // Filter inspections by the authenticated user's ID
         ->orderBy('inspections.id', 'desc')
         ->paginate();
@@ -62,7 +62,7 @@ static public function getRecordcustomerCompliance()
             ->join('registers', 'registers.id', '=', 'inspections.register_id')
             ->join('users', 'users.id', '=', 'inspections.user_id')
             ->where('inspections.is_delete', '=', 0)
-            ->where('inspections.percentage', '>', 50) // Add this condition
+            ->where('inspections.percentage', '>', 65) // Add this condition
             ->orderBy('inspections.id', 'desc')
             ->paginate();
     
@@ -75,7 +75,7 @@ static public function getRecordcustomerCompliance()
             ->join('registers', 'registers.id', '=', 'inspections.register_id')
             ->join('users', 'users.id', '=', 'inspections.user_id')
             ->where('inspections.is_delete', '=', 0)
-            ->where('inspections.percentage', '<', 49) // Add this condition
+            ->where('inspections.percentage', '<', 64) // Add this condition
             ->orderBy('inspections.id', 'desc')
             ->paginate();
     

@@ -6,18 +6,15 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\CompetitionsController;
-use App\Http\Controllers\GrantsController;
 use App\Http\Controllers\InspectionController;
 use App\Http\Controllers\InspectorController;
 use App\Http\Controllers\RecommendationController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\SubmissionController;
-use App\Http\Controllers\TeamController;
-use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\PDFController;
-use App\Models\GrantsModel;
+
+
 
 
 /*
@@ -183,7 +180,7 @@ Route::group(['middleware' => 'student'], function (){
     Route::post('customer/registration/edit/{id}',[RegistrationController::class, 'update'] );
     Route::get('customer/certificate/delete/{id}',[CertificateController::class, 'delete'] );
 
-   
+
     Route::get('student/change_password',[UserController::class, 'change_password'] );
     Route::post('student/change_password',[UserController::class, 'update_change_password'] );
 

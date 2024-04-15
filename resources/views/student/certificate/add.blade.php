@@ -9,7 +9,7 @@
         <div class="row mb-2">
           <div class="col-sm-12">
             <button type="button" class="btn btn-light" onclick="window.history.back()">Back</button> <!-- Back button -->
-            <h1 class="text-center fw-bold">Add Certificate</h1>
+            <h1 class="text-center fw-bold">Add Attachments</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -34,14 +34,14 @@
                 <div class="row">
                
                 <div class="form-group col-md-12">
-                    <label >Certificate Name:</label>
+                    <label >Attachment Name:</label>
                     <input type="text" class="form-control" value="{{ old ('certificate_name') }}" name="certificate_name" required placeholder="Name of Certificate">
                     <div style="color:red">{{ $errors->first('certificate_name') }}</div>
                   </div>
 
                    
                   <div class="form-group col-md-12">
-                    <label >Certificate </label>
+                    <label >Attachment </label>
                     <input type="file" class="form-control" name="certificate">
                     <div style="color:red">{{ $errors->first('certificate') }}</div>
                    

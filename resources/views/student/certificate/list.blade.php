@@ -11,7 +11,7 @@
         <div class="row mb-2">
           <div class="col-sm-12">
             <button type="button" class="btn btn-light" onclick="window.history.back()">Back</button> <!-- Back button -->
-            <h1 class="text-center fw-bold">My Certificate(Total : {{ $getRecord->total() }})</h1>
+            <h1 class="text-center fw-bold">My Attachments(Total : {{ $getRecord->total() }})</h1>
           </div>
   
         </div>
@@ -24,7 +24,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-12" style="text-align:right;">
-            <a href="{{ url('customer/certificate/add')}}" class="btn btn-outline-primary btn-sm">Add New Certificate</a>
+            <a href="{{ url('customer/certificate/add')}}" class="btn btn-outline-primary btn-sm">Add New Attachment</a>
           </div>
           
         </div>
@@ -55,7 +55,7 @@
 
                         
                               <div class="card-body">
-                                  <h5 class="card-title "><span class="text-danger">Certifcate Name:</span>{{ $certificate->certificate_name}}</h5>
+                                  <h5 class="card-title "><span class="text-danger">Attachment Name:</span>{{ $certificate->certificate_name}}</h5>
                                  
                                   <p class="card-text text-capitalize"> 
                                       </p>
