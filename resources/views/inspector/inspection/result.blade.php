@@ -93,6 +93,13 @@
               
             
               </div>
+
+              <div class="col-sm-6 pt-4"> 
+            
+                <h5 class="text-center fw-bold "> CELLPHONE NO.: <span class="text-decoration-underline"> {{ $getRecord->register->cp_number }}</span></h5>
+              
+            
+              </div>
             
               </div>
               <div class="row mb-2 pt-4">
